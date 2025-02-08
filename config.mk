@@ -69,13 +69,6 @@ ifneq ($(USE_STDINT),)
 PLATFORM_CPPFLAGS += -DCONFIG_USE_STDINT
 endif
 
-# Support Wide Platform
-ifeq ($(INCLUDE_LCD_HDMI_1920x720_12_3), true)
-PLATFORM_CPPFLAGS += -DCONFIG_USE_LCD_1920x720
-else
-PLATFORM_CPPFLAGS += -DCONFIG_USE_LCD_1280x720
-endif
-
 #########################################################################
 
 RELFLAGS := $(PLATFORM_RELFLAGS)

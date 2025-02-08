@@ -12,5 +12,9 @@ config SYS_CONFIG_NAME
 config FBCON
 	bool "Support for fb console"
 	default n
+	
+config USE_LCD_1920x720
+	bool "Support for Daudio Wide Platform"
+	default n
 
 endif
